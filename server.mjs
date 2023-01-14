@@ -4,6 +4,7 @@ import { default as express } from 'express';
 import { default as bodyParser } from 'body-parser';
 import { approotdir } from './approotdir.mjs';
 import * as http from 'http';
+import cors from 'cors'
 import { router as indexRouter } from './routes/index.mjs';
 
 const __dirname = approotdir;
@@ -14,7 +15,7 @@ const port = process.env.PORT || '3000';
 
 
 app.set('port', port);
-
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
