@@ -2,9 +2,9 @@
   "name": "superheroapi",
   "version": "1.0.0",
   "description": "api to get/post superheros",
-  "main": "server.mjs",
+  "main": "index.mjs",
   "scripts": {
-    "start": "node server.mjs",
+    "start": "DEBUG=server:*  node server.mjs",
     "pm2start": "pm2 start server.mjs",
     "pm2stop": "pm2 stop 0"
   },
@@ -14,8 +14,11 @@
     "axios": "^1.2.2",
     "body": "^5.1.0",
     "cors": "^2.8.5",
+    "debug": "^4.3.4",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "parser": "^0.1.4"
+    "morgan": "^1.10.0",
+    "parser": "^0.1.4",
+    "rotating-file-stream": "^3.0.4"
   }
 }
