@@ -25,6 +25,7 @@ The service was build on node with expressJS installed with it.
 Nginx acts as a reverse proxy and forwards requests to the node application at the correct port.
 The reverse proxy configuration file is available with the source code.
 The node application is kept alive with [pm2](https://www.npmjs.com/package/pm2)
+The server was given some level of security by installing [Fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page)
 To retreive an Hero simply append its id to the end of the Url is http:/jshanahan.biz/6
 There are 731 hero ID so the ID will have to be less than this.
 Due to time limits it is pretty crude. Little error validation was put in place.
