@@ -17,8 +17,6 @@ The front end is a React application. The user enters a hero ID. This in turn se
 ## Disclaimer
 I acknowledge that this could all be done directy from the React application but to purpose of this assignment was to implement some frontend and backend code therefore it was done this way.
 
-I did not have the knowledge to implement this as requested so basically I did the best I could with the knowledge that I had.
-
 
 # Technical Details
 
